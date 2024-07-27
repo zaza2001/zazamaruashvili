@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav id="navi" class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div id="margini" class="container-fluid">
+          <a id="logo" class="navbar-brand" href="#"><svg data-v-562b0aec="" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="165" height="32" viewbox="0 0 165 32" fill="currentColor"><path data-v-562b0aec="" d="M81.72,12.35c-1.84,0-3.11,1.39-3.11,3.09s1.15,3.09,3.11,3.09,3.1-1.39,3.1-3.09-1.26-3.09-3.1-3.09ZM68.36,9.65c2.85,0,4.6,2.21,4.6,5.38h0c0,2.48-.88,4.38-2.47,5.91l-1.94-1.63c.9-1.01,1.71-2.58,1.71-4.27,0-1.81-.91-2.92-2.24-2.92s-2.27.86-2.27,2.67v2.57h-2.71v-2.57c0-1.81-.94-2.67-2.27-2.67s-2.24,1.11-2.24,2.92v.16c.05,1.64.83,3.14,1.71,4.12l-1.94,1.63c-1.59-1.53-2.47-3.42-2.47-5.9h0s0-.14,0-.14c.05-3.1,1.78-5.24,4.6-5.24,1.99,0,3.4.9,3.96,2.25.57-1.35,1.97-2.25,3.96-2.25ZM152.31,9.65c3.48,0,5.68,2.6,5.68,5.72,0,2.34-.77,4.13-2.16,5.57l-1.95-1.61c1.09-1.4,1.41-2.67,1.41-3.95,0-1.83-1.02-3.27-2.97-3.27s-2.97,1.44-2.97,3.27c0,1.28.31,2.55,1.41,3.95l-1.95,1.61c-1.39-1.44-2.16-3.23-2.16-5.57,0-3.11,2.2-5.72,5.68-5.72ZM124.49,5.33v.12c0,1.21,3.11,1.73,3.11,4.12,0,1.18-.93,2-2.04,2.25,1.9.61,3.08,2.11,3.08,4.27,0,2.87-2.15,4.97-5.7,4.97-2.57,0-4.77-1.44-5.34-3.91l2.44-1.01c.39,1.49,1.5,2.45,2.9,2.45,1.97,0,2.97-1.15,2.97-2.55,0-1.64-1.15-2.68-2.97-2.68h-1.67v-2.45h1.52c1.31,0,2.08-.49,2.08-1.33,0-1.54-3.11-1.58-3.11-4.06v-.18h2.73ZM86.32,5.41v2.45h-6.62c-.99,0-1.33.59-1.33,1.33v2.1c.78-1.19,2.48-1.55,3.64-1.55,3.5,0,5.52,2.52,5.52,5.7s-2.18,5.7-5.81,5.7-6.05-2.43-6.05-6.2v-5.67c0-2.13,1.44-3.86,3.88-3.86h6.78ZM136.74,14.33c-2.26.48-3.15,2.49-3.2,4.38.06,2.17,1.21,4.49,4.27,4.49s4.21-2.32,4.27-4.49c-.05-1.86-.9-3.82-3.07-4.35.07.39.21,1.28.21,1.99v1.19h-2.71v-1.19c0-.72.15-1.65.22-2.02ZM139.23,9.94v.57c0,.42-.05.92-.11,1.33,3.88.56,5.69,3.65,5.69,6.87,0,3.56-2.22,6.96-7,6.96s-7-3.4-7-6.96c0-3.25,1.85-6.37,5.81-6.88-.06-.41-.11-.89-.11-1.31v-.57h2.71ZM100.78,9.94v.12c0,1.49,1.15,1.84,1.15,3.41,0,1.49-.97,2.24-2.37,2.52,2.02.55,3.08,1.93,3.08,4.21,0,3.04-2.2,5.46-6,5.46s-5.98-2.55-5.98-5.68v-10.05h2.71v10.05c0,1.65,1.1,3.2,3.27,3.2s3.27-1.45,3.27-3.05c0-1.78-1.15-2.93-2.97-2.93h-.46v-2.45h1.04c1.04,0,1.67-.55,1.67-1.39,0-1.22-1.15-1.44-1.15-3.26v-.18h2.73ZM110.29,9.65c3.31,0,5.35,1.92,5.35,5.35v5.39c0,3.05-2.1,5.28-5.47,5.28-3.02,0-5.13-1.65-5.47-4.69l2.48-.69c.22,1.93,1.31,2.91,2.85,2.91,2.04,0,2.88-1.26,2.88-2.86v-5.31c0-1.66-.89-2.92-2.62-2.92s-2.64,1.26-2.64,2.92v.97h-2.71v-.99c0-3.42,2.03-5.35,5.35-5.35ZM52.59,9.94v2.38c0,1.67-.69,2.85-1.98,3.5,1.93.71,3.08,2.3,3.08,4.58,0,3.05-2.15,5.28-5.7,5.28-2.57,0-4.77-1.44-5.34-3.91l2.44-1.01c.39,1.49,1.5,2.45,2.9,2.45,1.97,0,2.97-1.26,2.97-2.86,0-1.78-1.15-2.99-2.97-2.99h-1.79v-2.45h1.18c1.69,0,2.48-.99,2.48-2.38v-2.57h2.73Z" class="cls-2"></path><path data-v-562b0aec="" d="M13.92,5.92c.11.06.26.23.29.26,1.47,1.7,4.2,6.2,5.31,8.09,1.39,2.36,4.58,8.29,4.85,9.07.03.08,0,.18-.07.23-.08.05-.17.09-.4-.15-1.24-1.25-4.11-3.68-8.84-5.6-.25-.1-.47-.19-.68-.28-.66-.33-1.03-.82-1.21-1.5-.53-2.01-.91-5.76-.39-9,.02-.11.08-.5.21-.8.21-.45.6-.5.92-.32ZM12.14,5.48c.09.04.16.1.07.41-.47,1.7-1.14,5.39-.45,10.44.04.26.07.5.09.73.04.74-.2,1.3-.69,1.79-1.48,1.46-4.54,3.66-7.61,4.83-.11.04-.47.18-.8.21-.5.05-.74-.26-.74-.63,0-.13.07-.34.08-.38.74-2.12,3.29-6.73,4.37-8.63,1.35-2.38,4.91-8.1,5.45-8.73.05-.07.15-.1.23-.06ZM14.62,19.18c2.01.55,5.45,2.09,8,4.16.09.07.39.32.58.58.29.41.14.77-.18.95-.11.06-.33.11-.37.12-2.21.42-7.48.53-9.67.54-2.74.02-9.49-.19-10.3-.34-.09-.01-.16-.08-.17-.17,0-.1,0-.19.32-.27,1.71-.45,5.25-1.71,9.28-4.84.21-.16.4-.31.58-.44.62-.41,1.23-.48,1.9-.3Z" class="cls-2"></path><rect data-v-562b0aec="" x="33.06" y=".84" width=".99" height="29.32" class="cls-1"></rect></svg></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li id="li1" class="nav-item">
+                <a id="logo" class="nav-link active" aria-current="page" href="#">პროდუქტები</a>
+              </li>
+              <li id="li2" class="nav-item">
+                <a id="logo" class="nav-link" href="#">შეთავაზებები</a>
+              </li>
+              <li  class="nav-item dropdown">
+                <a id="logo" class="nav-link" href="#">
+                  კონცეპტის სივრცე
+                </a>
+              
+            </ul>
+            
+            <a style="margin-left: 170px;" id="arrownakrebi" data-v-562b0aec="" href="/ge/products/kits" class="arrow-link w-inline-block"><div data-v-562b0aec="" class="button_icon w-embed"><svg data-v-562b0aec="" width="16" height="16" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-562b0aec="" d="M9.7987 2.86675L14.4654 7.53341C14.732 7.80008 14.732 8.20008 14.4654 8.46675L9.7987 13.1334C9.53203 13.4001 9.13203 13.4001 8.86537 13.1334C8.5987 12.8667 8.5987 12.4667 8.86537 12.2001L12.3987 8.66675H1.9987C1.5987 8.66675 1.33203 8.40008 1.33203 8.00008C1.33203 7.60008 1.5987 7.33341 1.9987 7.33341H12.3987L8.86537 3.80008C8.73203 3.66675 8.66536 3.53341 8.66536 3.33341C8.66536 3.13341 8.73203 3.00008 8.86537 2.86675C9.13203 2.60008 9.53203 2.60008 9.7987 2.86675Z"></path></svg></div><div data-v-562b0aec="" class="button_text">გამოიწერეთ ნაკრები</div></a>    
+        
+          </div>
+        
+        </div>
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; 
+      }
+      .dropdown .btn {
+        background-color: white;
+        color: black;
+        border: 1px solid #ccc;
+      }
+      .dropdown .btn:hover {
+        background-color: white;
+        color: black;
+      }
+      .dropdown .dropdown-menu {
+        display: none;
+      }
+    </style>
+  
+  
+    <div  style="margin-left: 120px;margin-bottom: 50px; height: 1px;" class="container my-5">
+      <div class="dropdown">
+        <button
+        style="border-color: white;"
+          class="btn dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="bi bi-globe"></i>
+          <span class="ms-2">ქარ</span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">En</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+      </nav>
+      <p style="margin-left: 170px; font-size: 18px;" id="mtavari">მთავარი</p>
+      <div class="container">
+        <img id="pirvelisurati" src="https://static.tbcconcept.ge/desktop/media/ze324k50.yq4Become-2.webp" alt="tbc" style="width:90%; height:350px;">
+        <div class="centered">თიბისი კონცეპტი</div>
+        <div class="centereddown">პერსონალური საბანკო მომსახურება, მორგებული თქვენს საჭიროებებსა და ინტერესებზე</div>
+        <button id="button1" type="button" class="btn btn-primary btn-lg">გამოიწერეთ</button>
+    </div>
+    <p style="margin-left: 170px;" class="big-message_text"> გამოიწერეთ თიბისი კონცეპტის ნაკრები და ისარგებლეთ როგორც საბანკო, ისე არასაბანკო უპირატესობებით. </p>
+    <h2 class="h21">შეარჩიეთ ნაკრები </h2>
+
+    <style>
+      .card-overlay {
+        position: relative;
+        color: white;
+      }
+
+      .card-overlay .card-img {
+        opacity: 0.7;
+      }
+
+      .card-overlay .card-img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .card-container {
+        display: flex;
+        gap: 15px;
+      }
+
+      .card-column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    </style>
+  
+  
+    <div style="margin-left: 160px;" class="container my-5">
+      <div class="card-container">
+        <div class="card-column">
+          <div class="card card-overlay">
+            <a href="https://tbcconcept.ge/ge/singleview/245-digital-kit">
+              <img
+              src="https://static.tbcconcept.ge/desktop/media/mfvvitla.0j5430128849_7213815365374065_9017687812435872577_n.png"
+              class="card-img"
+              alt="Image"
+            />
+          </a>
+            <div class="card-img-overlay">
+              <div>
+                <h5 style="margin-right: 200px;margin-top:120px ;" class="card-title">ციფრული</h5>
+                <a style="margin-right: 190px;width: 300px;" href="#" class="btn btn-link text-white">იხილეთ მეტი</a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-overlay">
+            <img
+              src="https://static.tbcconcept.ge/desktop/media/0m25n3qt.w03prem.png" width
+              class="card-img"
+              alt="Image"
+            />
+            <div class="card-img-overlay">
+              <div>
+                <h5 style="margin-right: 200px;margin-top:120px ;" class="card-title">პრემიუმი</h5>
+                <a style="margin-right: 190px;width: 300px;" href="#" class="btn btn-link text-white">იხილეთ მეტი</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card card-overlay">
+            <img
+              src="https://static.tbcconcept.ge/desktop/media/nqeaa1rb.avl360.png" height="426px" width="400px"
+              class="card-img"
+              alt="Image"
+            />
+            <div class="card-img-overlay">
+              <div>
+                <h5 style="margin-right: 600px; margin-top:200px" class="card-title">360</h5>
+                <a style="margin-right: 520px; width: 300px;" href="#" class="btn btn-link text-white">იხილეთ მეტი</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <div style="margin-left: 190px;" class="container mt-4">
+      <div class="row mt-4">
+        <div class="col">
+          <div class="card" cass="card text-center" style="width: 18rem; border-color:white">
+      
+            <div id="momxmarebeli" class="card-body">
+              <h5 id="teqsti" class="card-title" style="color: #141719;
+              font-size: 44px;
+              font-weight: 700;
+              line-height: 1.3; text-align: left">94 750</h5>
+              <p id="teqsti" class="card-text" style="text-align: left;font-size: 16px;
+    font-weight: 500">მომხმარებელი</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem; border-color:white">
+      
+            <div id="momxmarebeli" class="card-body">
+              <h5 id="teqsti" class="card-title" style="color: #141719;
+              font-size: 44px;
+              font-weight: 700;
+              line-height: 1.3; text-align: left">150+</h5>
+              <p id="teqsti" class="card-text" style="text-align: left;font-size: 16px;
+    font-weight: 500">ღონისძიება</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem; border-color:white; " >
+      
+            <div id="momxmarebeli" class="card-body" >
+              <h5 id="teqsti" class="card-title" style="color: #141719;
+              font-size: 44px;
+              font-weight: 700;
+              line-height: 1.3; text-align: left;">130+</h5>
+              <p id="teqsti" class="card-text" style="text-align: left;font-size: 16px;
+    font-weight: 500;">შეთავაზება</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <p style="color: #141719;
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 700;margin-left: 170px;">შეთავაზებები</p>
+  <div  style="cursor: grab;" class="scroll-container">
+    <div class="scroll-content">
+  <div class="container mt-4">
+    <div class="row mt-4">
+      <div class="col">
+        <div class="card" style="width: 22rem;">
+          <a href=""><img src="https://static.tbcconcept.ge/desktop/media/sohqmh0p.mff350x212_1%201.png" class="card-img-top" alt="...">
+        </a> <div class="card-body">
+            <h5 class="card-title" style="color: #141719;
+            margin-top: 0;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 700;">ინვესტიციები</h5>
+            <p class="card-text" style="color: #141719;
+            text-align: left;
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: 700;">MP დეველოპმენტი - აშშ...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 22rem; padding-bottom: 27px;">
+          <a href=""> <img src="https://static.tbcconcept.ge/desktop/media/nng1tsvv.1bs350.jpg" class="card-img-top" alt="...">
+          </a><div class="card-body">
+            <h5 class="card-title" style="color: #141719;
+            margin-top: 0;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 700;">ჯაზ ფესტივალის შეთავაზებები</h5>
+            <p class="card-text" style="color: #141719;
+            text-align: left;
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: 700;">IVERIA BEACH - დაიბრუნეთ...</p>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card" style="width: 22rem; padding-bottom: 0px; ">
+          <a href=""><img src="https://static.tbcconcept.ge/desktop/media/onflg4xp.isqDSC_2268%202.png" class="card-img-top" alt="...">
+          </a><div class="card-body">
+            <h5 class="card-title" style="color: #141719;
+            margin-top: 0;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 700;">ავტო  თეგეტა მოტორსი</h5>
+            <p class="card-text" style="color: #141719;
+            text-align: left;
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: 700;">თეგეტა მოტორსი - 50%...</p>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+    <script src="script.js"></script>
+  <div class="konteineri" style="width: 100%;height: 500px; margin-top: 10%; background-color: white;">
+    <p style="margin-left: 100px; margin-top:100px; color: #141719;
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 700;">ციფრული ბანკი</p><br>
+    <p style="margin-left:100px;margin-top: 50px; color: #555f62;
+    font-family: TBCX, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;">შეასრულეთ საბანკო ოპერაციები დისტანციურად, ციფრული ბანკის დახმარებით</p>
+    <img src="https://static.tbcconcept.ge/desktop/media/3sdx4uin.3qibankkk3.png" alt="" height="300px" width="200px" style="margin-left: 1100px; margin-top: -100px;">
+<a href=""><img style="margin-left: 100px; margin-bottom:50px; height: 33px; border: 1px solid #e1e4e5;
+  border-radius: 4px;" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjgiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCA2OCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gPHBhdGggZD0iTTM0LjE0MTggOC43NTI2NEMzMi43NjEzIDguNzUyNjQgMzEuNjM2IDkuODA0NTMgMzEuNjM2IDExLjI1MzNDMzEuNjM2IDEyLjY5MzIgMzIuNzYxMyAxMy43NTM5IDM0LjE0MTggMTMuNzUzOUMzNS41MjMgMTMuNzUzOSAzNi42NDgyIDEyLjY5MzIgMzYuNjQ4MiAxMS4yNTMzQzM2LjY0NzYgOS44MDQ1MyAzNS41MjI0IDguNzUyNjQgMzQuMTQxOCA4Ljc1MjY0Wk0zNC4xNDE4IDEyLjc2OTdDMzMuMzg1MiAxMi43Njk3IDMyLjczMzEgMTIuMTQ0NyAzMi43MzMxIDExLjI1MzlDMzIuNzMzMSAxMC4zNTM3IDMzLjM4NTggOS43MzgwOCAzNC4xNDE4IDkuNzM4MDhDMzQuODk4NCA5LjczODA4IDM1LjU1MDYgMTAuMzUzNyAzNS41NTA2IDExLjI1MzlDMzUuNTUwNiAxMi4xNDQxIDM0Ljg5ODQgMTIuNzY5NyAzNC4xNDE4IDEyLjc2OTdaTTI4LjY3NDcgOC43NTI2NEMyNy4yOTQyIDguNzUyNjQgMjYuMTY4OSA5LjgwNDUzIDI2LjE2ODkgMTEuMjUzM0MyNi4xNjg5IDEyLjY5MzIgMjcuMjk0MiAxMy43NTM5IDI4LjY3NDcgMTMuNzUzOUMzMC4wNTU5IDEzLjc1MzkgMzEuMTgxMSAxMi42OTMyIDMxLjE4MTEgMTEuMjUzM0MzMS4xODExIDkuODA0NTMgMzAuMDU1OSA4Ljc1MjY0IDI4LjY3NDcgOC43NTI2NFpNMjguNjc0NyAxMi43Njk3QzI3LjkxODEgMTIuNzY5NyAyNy4yNjYgMTIuMTQ0NyAyNy4yNjYgMTEuMjUzOUMyNy4yNjYgMTAuMzUzNyAyNy45MTg3IDkuNzM4MDggMjguNjc0NyA5LjczODA4QzI5LjQzMTMgOS43MzgwOCAzMC4wODM1IDEwLjM1MzcgMzAuMDgzNSAxMS4yNTM5QzMwLjA4NDEgMTIuMTQ0MSAyOS40MzEzIDEyLjc2OTcgMjguNjc0NyAxMi43Njk3Wk0yMi4xNzIyIDkuNTIwNTNWMTAuNTgxMkgyNC43MDY4QzI0LjYzMSAxMS4xNzggMjQuNDMyNiAxMS42MTM3IDI0LjEyOTggMTEuOTE2NUMyMy43NjExIDEyLjI4NTggMjMuMTg0MSAxMi42OTMyIDIyLjE3MjIgMTIuNjkzMkMyMC42MTIgMTIuNjkzMiAxOS4zOTIzIDExLjQzMzIgMTkuMzkyMyA5Ljg3MDM4QzE5LjM5MjMgOC4zMDc1NSAyMC42MTIgNy4wNDc1MiAyMi4xNzIyIDcuMDQ3NTJDMjMuMDEzOSA3LjA0NzUyIDIzLjYyODUgNy4zNzkxNCAyNC4wODIyIDcuODA1NDJMMjQuODI5NCA3LjA1NjkzQzI0LjE5NTUgNi40NTA3MyAyMy4zNTQ0IDUuOTg2ODIgMjIuMTcyMiA1Ljk4NjgyQzIwLjAzNSA1Ljk4NjgyIDE4LjIzODMgNy43Mjk1NyAxOC4yMzgzIDkuODcwMzhDMTguMjM4MyAxMi4wMTEyIDIwLjAzNSAxMy43NTM5IDIyLjE3MjIgMTMuNzUzOUMyMy4zMjU2IDEzLjc1MzkgMjQuMTk2MSAxMy4zNzQ3IDI0Ljg3NjQgMTIuNjY0NEMyNS41NzYxIDExLjk2MzYgMjUuNzkzOCAxMC45NzgxIDI1Ljc5MzggMTAuMTgyNkMyNS43OTM4IDkuOTM2ODIgMjUuNzc1MSA5LjcwOTI3IDI1LjczNjkgOS41MTk5NUgyMi4xNzIyVjkuNTIwNTNaTTQ4Ljc2NjkgMTAuMzQ0M0M0OC41NTkxIDkuNzg1NzEgNDcuOTI1MiA4Ljc1MjY0IDQ2LjYyOTggOC43NTI2NEM0NS4zNDM3IDguNzUyNjQgNDQuMjc0OCA5Ljc2NjMxIDQ0LjI3NDggMTEuMjUzM0M0NC4yNzQ4IDEyLjY1NSA0NS4zMzQzIDEzLjc1MzkgNDYuNzUyNCAxMy43NTM5QzQ3Ljg5NjUgMTMuNzUzOSA0OC41NTg2IDEzLjA1MzEgNDguODMzMyAxMi42NDU2TDQ3Ljk4MjEgMTIuMDc3QzQ3LjY5ODYgMTIuNDkzOSA0Ny4zMTA2IDEyLjc2ODUgNDYuNzUyNCAxMi43Njg1QzQ2LjE5NDggMTIuNzY4NSA0NS43OTc0IDEyLjUxMjcgNDUuNTQyMSAxMi4wMTA2TDQ4Ljg4MDIgMTAuNjI3N0w0OC43NjY5IDEwLjM0NDNaTTQ1LjM2MjUgMTEuMTc4QzQ1LjMzNDMgMTAuMjExNCA0Ni4xMDk3IDkuNzE5MjcgNDYuNjY3OSA5LjcxOTI3QzQ3LjEwMjkgOS43MTkyNyA0Ny40NzE1IDkuOTM3NDEgNDcuNTk0NyAxMC4yNDk2TDQ1LjM2MjUgMTEuMTc4Wk00Mi42NDg5IDEzLjYwMjhINDMuNzQ1NFY2LjI1MjU4SDQyLjY0ODlWMTMuNjAyOFpNNDAuODUxNiA5LjMxMThINDAuODE0QzQwLjU2OCA5LjAxNzgyIDQwLjA5NDkgOC43NTI2NCAzOS40OTk4IDguNzUyNjRDMzguMjUxMiA4Ljc1MjY0IDM3LjEwNzIgOS44NTE1NiAzNy4xMDcyIDExLjI2MzNDMzcuMTA3MiAxMi42NjUgMzguMjUxMiAxMy43NTQ1IDM5LjQ5OTggMTMuNzU0NUM0MC4wOTU1IDEzLjc1NDUgNDAuNTY4IDEzLjQ4OTQgNDAuODE0IDEzLjE4NjVINDAuODUxNlYxMy41NDY0QzQwLjg1MTYgMTQuNTAzIDQwLjM0MDkgMTUuMDE0NiAzOS41MTg1IDE1LjAxNDZDMzguODQ3IDE1LjAxNDYgMzguNDMwOSAxNC41MzE4IDM4LjI2MDYgMTQuMTI0NEwzNy4zMDU2IDE0LjUyMjRDMzcuNTc5OCAxNS4xODUxIDM4LjMwNzYgMTYgMzkuNTE4NSAxNkM0MC44MDQ2IDE2IDQxLjg5MjMgMTUuMjQyMSA0MS44OTIzIDEzLjM5NDdWOC45MDQ5M0g0MC44NTIxVjkuMzExOEg0MC44NTE2Wk0zOS41OTQzIDEyLjc2OTdDMzguODM3NiAxMi43Njk3IDM4LjIwNDMgMTIuMTM0NyAzOC4yMDQzIDExLjI2MzNDMzguMjA0MyAxMC4zODE5IDM4LjgzNzYgOS43MzgwOCAzOS41OTQzIDkuNzM4MDhDNDAuMzQwOSA5LjczODA4IDQwLjkyNzMgMTAuMzgxOSA0MC45MjczIDExLjI2MzNDNDAuOTI3MyAxMi4xMzQ3IDQwLjM0MDkgMTIuNzY5NyAzOS41OTQzIDEyLjc2OTdaTTUzLjkwNTMgNi4yNTI1OEg1MS4yODFWMTMuNjAyOEg1Mi4zNzU3VjEwLjgxODJINTMuOTA0N0M1NS4xMTg2IDEwLjgxODIgNTYuMzEyNSA5LjkzOCA1Ni4zMTI1IDguNTM1NjhDNTYuMzEyNSA3LjEzMzM2IDU1LjExOTIgNi4yNTI1OCA1My45MDUzIDYuMjUyNThaTTUzLjkzMzUgOS43OTUxMkg1Mi4zNzU3VjcuMjc1NjVINTMuOTMzNUM1NC43NTIzIDcuMjc1NjUgNTUuMjE3MiA3Ljk1NDc2IDU1LjIxNzIgOC41MzU2OEM1NS4yMTcyIDkuMTA0ODQgNTQuNzUyMyA5Ljc5NTEyIDUzLjkzMzUgOS43OTUxMlpNNjAuNzAyNSA4LjczOTcxQzU5LjkwOTUgOC43Mzk3MSA1OS4wODgzIDkuMDg5NTUgNTguNzQ4NSA5Ljg2NTA5TDU5LjcyMDUgMTAuMjcxNEM1OS45MjgzIDkuODY1MDkgNjAuMzE1NyA5LjczMjIxIDYwLjcyMTMgOS43MzIyMUM2MS4yODc3IDkuNzMyMjEgNjEuODYzNiAxMC4wNzI2IDYxLjg3MyAxMC42Nzc3VjEwLjc1MzVDNjEuNjc0NiAxMC42NCA2MS4yNDk2IDEwLjQ3MDEgNjAuNzMwNyAxMC40NzAxQzU5LjY4MjkgMTAuNDcwMSA1OC42MTU4IDExLjA0NjkgNTguNjE1OCAxMi4xMjQ3QzU4LjYxNTggMTMuMTA4MyA1OS40NzUyIDEzLjc0MTYgNjAuNDM3OCAxMy43NDE2QzYxLjE3MzkgMTMuNzQxNiA2MS41ODAxIDEzLjQxMDYgNjEuODM0OCAxMy4wMjI1SDYxLjg3MjRWMTMuNTg5OUg2Mi45MzAxVjEwLjc3MTdDNjIuOTMwNyA5LjQ2NzYyIDYxLjk1NzUgOC43Mzk3MSA2MC43MDI1IDguNzM5NzFaTTYwLjU2OTkgMTIuNzY3OUM2MC4yMTE4IDEyLjc2NzkgNTkuNzExMSAxMi41ODggNTkuNzExMSAxMi4xNDM1QzU5LjcxMTEgMTEuNTc2MSA2MC4zMzQ1IDExLjM1ODUgNjAuODcyNyAxMS4zNTg1QzYxLjM1MzUgMTEuMzU4NSA2MS41ODA2IDExLjQ2MjYgNjEuODczIDExLjYwNDNDNjEuNzg3OCAxMi4yODU4IDYxLjIwMjYgMTIuNzY3OSA2MC41Njk5IDEyLjc2NzlaTTY2Ljc4MTggOC45MDAyMkw2NS41MjYzIDEyLjA4N0g2NS40ODg3TDY0LjE4NTYgOC45MDAyMkg2My4wMDU4TDY0Ljk1OTkgMTMuMzU0MUw2My44NDU4IDE1LjgzMThINjQuOTg4TDY3Ljk5OTggOC45MDAyMkg2Ni43ODE4Wk01Ni45MTcxIDEzLjYwMjhINTguMDExOFY2LjI1MjU4SDU2LjkxNzFWMTMuNjAyOFoiIGZpbGw9IiMxNDE3MTkiLz4gPHBhdGggZD0iTTIxLjk3ODYgMS45ODYxNUMyMS45Nzg2IDIuNDc4ODcgMjEuODMzIDIuODcxMDUgMjEuNTQxMyAzLjE2Mzg2QzIxLjIxMDIgMy41MTE5NCAyMC43NzgyIDMuNjg1OTggMjAuMjQ3NiAzLjY4NTk4QzE5LjczOTMgMy42ODU5OCAxOS4zMDY3IDMuNTA5NTggMTguOTUxNSAzLjE1NjhDMTguNTk1OCAyLjgwMzQzIDE4LjQxOCAyLjM2NTk4IDE4LjQxOCAxLjg0Mzg2QzE4LjQxOCAxLjMyMTE1IDE4LjU5NTggMC44ODM2OTYgMTguOTUxNSAwLjUzMDkxMkMxOS4zMDY3IDAuMTc3NTQgMTkuNzM5MyAwLjAwMTE0ODg2IDIwLjI0NzYgMC4wMDExNDg4NkMyMC41IDAuMDAxMTQ4ODYgMjAuNzQxMiAwLjA1MDUzODMgMjAuOTcwMSAwLjE0ODczQzIxLjE5OTcgMC4yNDc1MDkgMjEuMzgzNCAwLjM3ODYyNyAyMS41MjA3IDAuNTQyNjcyTDIxLjIxMTQgMC44NTMxMjJDMjAuOTc4NCAwLjU3MzgzNCAyMC42NTczIDAuNDM0NDg1IDIwLjI0NyAwLjQzNDQ4NUMxOS44NzYgMC40MzQ0ODUgMTkuNTU1NSAwLjU2NTAxNSAxOS4yODQ5IDAuODI2MDc1QzE5LjAxNDMgMS4wODcxNCAxOC44NzkzIDEuNDI2NCAxOC44NzkzIDEuODQzMjdDMTguODc5MyAyLjI2MDE0IDE5LjAxNDMgMi41OTk0IDE5LjI4NDkgMi44NjA0NkMxOS41NTU1IDMuMTIxNTIgMTkuODc2IDMuMjUyMDUgMjAuMjQ3IDMuMjUyMDVDMjAuNjQwMyAzLjI1MjA1IDIwLjk2ODQgMy4xMjA5MyAyMS4yMzA4IDIuODU4MTFDMjEuNDAxIDIuNjg3MDEgMjEuNDk5NiAyLjQ0ODg4IDIxLjUyNiAyLjE0MzcySDIwLjI0N1YxLjcxOTc5SDIxLjk1MzNDMjEuOTcwOSAxLjgxMjExIDIxLjk3ODYgMS45MDA4OSAyMS45Nzg2IDEuOTg2MTVaIiBmaWxsPSIjMTQxNzE5Ii8+IDxwYXRoIGQ9Ik0yNC42ODQ2IDAuNTEyNzE4SDIzLjA4MVYxLjYzMTA0SDI0LjUyNzNWMi4wNTQ5N0gyMy4wODFWMy4xNzMzSDI0LjY4NDZWMy42MDcyMkgyMi42Mjg0VjAuMDc5MzgyMkgyNC42ODQ2VjAuNTEyNzE4WiIgZmlsbD0iIzE0MTcxOSIvPiA8cGF0aCBkPSJNMjYuNTkyOCAzLjYwNzIySDI2LjE0MDJWMC41MTI3MThIMjUuMTU2NFYwLjA3OTM4MjJIMjcuNTc2NlYwLjUxMjcxOEgyNi41OTI4VjMuNjA3MjJaIiBmaWxsPSIjMTQxNzE5Ii8+IDxwYXRoIGQ9Ik0yOS4zMjc1IDMuNjA3MjJWMC4wNzkzODIySDI5Ljc4VjMuNjA3MjJIMjkuMzI3NVoiIGZpbGw9IiMxNDE3MTkiLz4gPHBhdGggZD0iTTMxLjc4NyAzLjYwNzIySDMxLjMzNDRWMC41MTI3MThIMzAuMzUwN1YwLjA3OTM4MjJIMzIuNzcwOFYwLjUxMjcxOEgzMS43ODdWMy42MDcyMloiIGZpbGw9IiMxNDE3MTkiLz4gPHBhdGggZD0iTTM3LjM1MiAzLjE1MTU0QzM3LjAwNTcgMy41MDc4NSAzNi41NzU0IDMuNjg2IDM2LjA2MDYgMy42ODZDMzUuNTQ1OSAzLjY4NiAzNS4xMTU2IDMuNTA3ODUgMzQuNzY5OSAzLjE1MTU0QzM0LjQyMzYgMi43OTUyMiAzNC4yNTEgMi4zNTg5NSAzNC4yNTEgMS44NDMzQzM0LjI1MSAxLjMyNzY0IDM0LjQyMzYgMC44OTEzNjcgMzQuNzY5OSAwLjUzNTA1NUMzNS4xMTU2IDAuMTc4NzQ0IDM1LjU0NTkgMCAzNi4wNjA2IDBDMzYuNTcyNSAwIDM3LjAwMjIgMC4xNzkzMzIgMzcuMzQ5NyAwLjUzNzQwN0MzNy42OTcxIDAuODk1NDgzIDM3Ljg3MDkgMS4zMzA1OCAzNy44NzA5IDEuODQzM0MzNy44NzA5IDIuMzU4OTUgMzcuNjk3NyAyLjc5NTIyIDM3LjM1MiAzLjE1MTU0Wk0zNS4xMDM5IDIuODU1NzlDMzUuMzY0NSAzLjEyMDM3IDM1LjY4MzIgMy4yNTIwOCAzNi4wNjA2IDMuMjUyMDhDMzYuNDM4MSAzLjI1MjA4IDM2Ljc1NzQgMy4xMTk3OSAzNy4wMTc0IDIuODU1NzlDMzcuMjc4IDIuNTkxMiAzNy40MDg5IDIuMjUzNyAzNy40MDg5IDEuODQzM0MzNy40MDg5IDEuNDMyODkgMzcuMjc4IDEuMDk1MzkgMzcuMDE3NCAwLjgzMDgwNkMzNi43NTc0IDAuNTY2MjE4IDM2LjQzODEgMC40MzQ1MTIgMzYuMDYwNiAwLjQzNDUxMkMzNS42ODMyIDAuNDM0NTEyIDM1LjM2NDUgMC41NjY4MDYgMzUuMTAzOSAwLjgzMDgwNkMzNC44NDM4IDEuMDk1MzkgMzQuNzEzIDEuNDMyODkgMzQuNzEzIDEuODQzM0MzNC43MTMgMi4yNTM3IDM0Ljg0MzggMi41OTEyIDM1LjEwMzkgMi44NTU3OVoiIGZpbGw9IiMxNDE3MTkiLz4gPHBhdGggZD0iTTM4LjUwNiAzLjYwNzIyVjAuMDc5MzgyMkgzOS4wNTY2TDQwLjc2ODIgMi44MjM0NUg0MC43ODc2TDQwLjc2ODIgMi4xNDM3NlYwLjA3OTM4MjJINDEuMjIwOFYzLjYwNzIySDQwLjc0ODNMMzguOTU3NCAwLjcyOTY4MUgzOC45MzhMMzguOTU3NCAxLjQwOTM4VjMuNjA3MjJIMzguNTA2WiIgZmlsbD0iIzE0MTcxOSIvPiA8ZyBmaWx0ZXI9InVybCgjZmlsdGVyMF9paV8zMzdfMTc5MzcpIj4gPHBhdGggZD0iTTAuMjcxNzcxIDAuMzk1NzM2QzAuMTAwOTYgMC41NzY4MzIgLTIuNTA3ODRlLTA3IDAuODU3ODgzIC0yLjUwNzg0ZS0wNyAxLjIyMTg0VjE0LjIyNTRDLTIuNTA3ODRlLTA3IDE0LjU5IDAuMTAwOTYgMTQuODcwNSAwLjI3MTc3MSAxNS4wNTE2TDAuMzE1MjA3IDE1LjA5MzlMNy41ODcyNiA3LjgwOTQ5VjcuNzIzNjRWNy42Mzc4TDAuMzE1MjA3IDAuMzUyODE0TDAuMjcxNzcxIDAuMzk1NzM2WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzMzN18xNzkzNykiLz4gPHBhdGggZD0iTTEwLjAwOTYgMTAuMjM4M0w3LjU4NTk0IDcuODA5NDNWNy43MjM1OFY3LjYzNzc0TDEwLjAxMDIgNS4yMDk0MUwxMC4wNjQ3IDUuMjQwNTdMMTIuOTM2OCA2Ljg3NTE0QzEzLjc1NjggNy4zNDE5OSAxMy43NTY4IDguMTA1NzcgMTIuOTM2OCA4LjU3MzJMMTAuMDY0NyAxMC4yMDc4TDEwLjAwOTYgMTAuMjM4M1oiIGZpbGw9InVybCgjcGFpbnQxX2xpbmVhcl8zMzdfMTc5MzcpIi8+IDxnIGZpbHRlcj0idXJsKCNmaWx0ZXIxX2lfMzM3XzE3OTM3KSI+IDxwYXRoIGQ9Ik0xMC4wNjM4IDEwLjIwNzJMNy41ODQ0MyA3LjcyMzYzTDAuMjY5NTMyIDE1LjA1MTVDMC41Mzk1NDEgMTUuMzM4NSAwLjk4NjIzIDE1LjM3MzggMS40ODkyNyAxNS4wODhMMTAuMDYzOCAxMC4yMDcyWiIgZmlsbD0idXJsKCNwYWludDJfbGluZWFyXzMzN18xNzkzNykiLz4gPC9nPiA8cGF0aCBkPSJNMTAuMDYzOCA1LjI0MDAxTDEuNDg5MjcgMC4zNTk4MzVDMC45ODYyMyAwLjA3MzQ5MTcgMC41Mzk1NDEgMC4xMDkzNTggMC4yNjk1MzIgMC4zOTYyODlMNy41ODUwMiA3LjcyNDJMMTAuMDYzOCA1LjI0MDAxWiIgZmlsbD0idXJsKCNwYWludDNfbGluZWFyXzMzN18xNzkzNykiLz4gPC9nPiA8ZGVmcz4gPGZpbHRlciBpZD0iZmlsdGVyMF9paV8zMzdfMTc5MzciIHg9IjAiIHk9IjAuMTYyMjMxIiB3aWR0aD0iMTMuNTUwOCIgaGVpZ2h0PSIxNS4xMjMxIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+IDxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+IDxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9InNoYXBlIi8+IDxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPiA8ZmVPZmZzZXQgZHk9Ii0wLjE1Ii8+IDxmZUNvbXBvc2l0ZSBpbjI9ImhhcmRBbHBoYSIgb3BlcmF0b3I9ImFyaXRobWV0aWMiIGsyPSItMSIgazM9IjEiLz4gPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAuMTIgMCIvPiA8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0ic2hhcGUiIHJlc3VsdD0iZWZmZWN0MV9pbm5lclNoYWRvd18zMzdfMTc5MzciLz4gPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+IDxmZU9mZnNldCBkeT0iMC4xNSIvPiA8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJhcml0aG1ldGljIiBrMj0iLTEiIGszPSIxIi8+IDxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDEgMCAwIDAgMCAxIDAgMCAwIDAgMSAwIDAgMCAwLjI1IDAiLz4gPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbjI9ImVmZmVjdDFfaW5uZXJTaGFkb3dfMzM3XzE3OTM3IiByZXN1bHQ9ImVmZmVjdDJfaW5uZXJTaGFkb3dfMzM3XzE3OTM3Ii8+IDwvZmlsdGVyPiA8ZmlsdGVyIGlkPSJmaWx0ZXIxX2lfMzM3XzE3OTM3IiB4PSIwLjI2OTUzMSIgeT0iNy43MjM2MyIgd2lkdGg9IjkuNzkyOTciIGhlaWdodD0iNy41NjE3NCIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPiA8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPiA8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJzaGFwZSIvPiA8ZmVDb2xvck1hdHJpeCBpbj0iU291cmNlQWxwaGEiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIgcmVzdWx0PSJoYXJkQWxwaGEiLz4gPGZlT2Zmc2V0IGR5PSItMC4xNSIvPiA8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJhcml0aG1ldGljIiBrMj0iLTEiIGszPSIxIi8+IDxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjA4IDAiLz4gPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbjI9InNoYXBlIiByZXN1bHQ9ImVmZmVjdDFfaW5uZXJTaGFkb3dfMzM3XzE3OTM3Ii8+IDwvZmlsdGVyPiA8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMzM3XzE3OTM3IiB4MT0iNi45NDI2NCIgeTE9IjEuMDg0MjUiIHgyPSItMi45MjQ3MSIgeTI9IjEwLjkzNDkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4gPHN0b3Agc3RvcC1jb2xvcj0iIzAwQTBGRiIvPiA8c3RvcCBvZmZzZXQ9IjAuMDA2NiIgc3RvcC1jb2xvcj0iIzAwQTFGRiIvPiA8c3RvcCBvZmZzZXQ9IjAuMjYwMSIgc3RvcC1jb2xvcj0iIzAwQkVGRiIvPiA8c3RvcCBvZmZzZXQ9IjAuNTEyMiIgc3RvcC1jb2xvcj0iIzAwRDJGRiIvPiA8c3RvcCBvZmZzZXQ9IjAuNzYwNCIgc3RvcC1jb2xvcj0iIzAwREZGRiIvPiA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMEUzRkYiLz4gPC9saW5lYXJHcmFkaWVudD4gPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDFfbGluZWFyXzMzN18xNzkzNyIgeDE9IjE0LjAwNDIiIHkxPSI3LjcyMzU4IiB4Mj0iLTAuMTk4MTk0IiB5Mj0iNy43MjM1OCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPiA8c3RvcCBzdG9wLWNvbG9yPSIjRkZFMDAwIi8+IDxzdG9wIG9mZnNldD0iMC40MDg3IiBzdG9wLWNvbG9yPSIjRkZCRDAwIi8+IDxzdG9wIG9mZnNldD0iMC43NzU0IiBzdG9wLWNvbG9yPSIjRkZBNTAwIi8+IDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGOUMwMCIvPiA8L2xpbmVhckdyYWRpZW50PiA8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50Ml9saW5lYXJfMzM3XzE3OTM3IiB4MT0iOC43MTczNiIgeTE9IjkuMDcyMzgiIHgyPSItNC42NjQwMSIgeTI9IjIyLjQzMTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4gPHN0b3Agc3RvcC1jb2xvcj0iI0ZGM0E0NCIvPiA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNDMzExNjIiLz4gPC9saW5lYXJHcmFkaWVudD4gPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDNfbGluZWFyXzMzN18xNzkzNyIgeDE9Ii0xLjU3Mjc1IiB5MT0iLTMuOTMyNDkiIHgyPSI0LjQwMjQiIHkyPSIyLjAzMjU0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+IDxzdG9wIHN0b3AtY29sb3I9IiMzMkEwNzEiLz4gPHN0b3Agb2Zmc2V0PSIwLjA2ODUiIHN0b3AtY29sb3I9IiMyREE3NzEiLz4gPHN0b3Agb2Zmc2V0PSIwLjQ3NjIiIHN0b3AtY29sb3I9IiMxNUNGNzQiLz4gPHN0b3Agb2Zmc2V0PSIwLjgwMDkiIHN0b3AtY29sb3I9IiMwNkU3NzUiLz4gPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDBGMDc2Ii8+IDwvbGluZWFyR3JhZGllbnQ+IDwvZGVmcz4gPC9zdmc+">
+</a>
+<a href="">
+<img src="https://apps.apple.com/us/app/tbc-bank/id766598432" alt="appstoreicon" style="margin-left: 50px;">
+
+</a>
+</div>
+  <p style="color: #141719;
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 700;margin-left: 170px;">პროდუქტები</p>
+<div class="scroll-container">
+  <div class="scroll-content">
+<div class="container mt-4">
+<div class="row mt-4">
+  <div class="col">
+    <div class="card" style="width: 22rem;">
+      <a href="">  <img src="https://static.tbcconcept.ge/desktop/media/mfvvitla.0j5430128849_7213815365374065_9017687812435872577_n.png" class="card-img-top" alt="...">
+      </a><div class="card-body">
+        <h5 class="card-title" style="color: #141719;
+        margin-top: 0;
+        text-align: left;
+        font-size: 22px;
+        font-weight: 700;">ციფრული</h5>
+        <p class="card-text" style="color: #141719;
+        text-align: left;
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 700;">თიბისი კონცეპტის ციფრული ნაკრები ...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 22rem; padding-bottom: 27px;">
+      <a href=""> <img src="https://static.tbcconcept.ge/desktop/media/0m25n3qt.w03prem.png" class="card-img-top" alt="...">
+      </a><div class="card-body">
+        <h5 class="card-title" style="color: #141719;
+        margin-top: 0;
+        text-align: left;
+        font-size: 22px;
+        font-weight: 700;">პრემიუმი</h5>
+        <p class="card-text" style="color: #141719;
+        text-align: left;
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 700;">თიბისი კონცეპტის მომხმარებლებთან...</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="width: 22rem; padding-bottom: 0px; ">
+      <a href=""><img src="https://static.tbcconcept.ge/desktop/media/nqeaa1rb.avl360.png" class="card-img-top" alt="...">
+    </a>  <div class="card-body">
+        <h5 class="card-title" style="color: #141719;
+        margin-top: 0;
+        text-align: left;
+        font-size: 22px;
+        font-weight: 700;">360</h5>
+        <p class="card-text" style="color: #141719;
+        text-align: left;
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 700;">თიბისი კონცეპტის 360 ნაკრები...</p>
+        
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+<div style="margin-left: 170px;" class="container my-5">
+  <div class="card-container">
+    <div class="card-column">
+      <div class="card card-overlay">
+        <img
+          src="https://static.tbcconcept.ge/desktop/media/nvmgsymp.3xqprivate%20banker.png"
+          class="card-img"
+          alt="Image"
+        />
+        <div class="card-img-overlay">
+          <div>
+            <h5 class="card-title" style="margin-right:800px;">პირადი ბანკირი</h5>
+            <br>
+            <h6 style="margin-right:700px">თქვენი სანდო პარტნიორი ფინანსურ რჩევებსა და ოპერაციებში</h4>
+              <button style="margin-right: 850px; margin-top: 20px;" type="button" class="btn btn-primary">იხილეთ მეტი</button>
+          </div>
+        </div>
+      </div>
+      
+      <p style="color: #141719;
+      margin-top: 50px;
+      font-size: 24px;
+      font-weight: 700;margin-right: 1000px;">ჯილდოები</p>
+
+<div class="container mt-4">
+  <div class="row mt-4" >
+    <div class="col">
+      <div class="card" style="width: 22rem;border-width: 0px;">
+        <a href=""><img src="https://static.tbcconcept.ge/desktop/media/dffiuhjz.i3xglobal-finance-logo-8F6EBD1345-seeklogo.com.png" height="80px" width="30px" style="padding-right: 100px;" class="card-img-top" alt="...">
+        </a><div class="card-body">
+          <h5 class="card-title" style="    color: #141719;
+          margin-right: 40px;
+          font-size: 14px;
+          font-weight: 700;">საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024</h5>
+          <p class="card-te1xt" style="color: #141719;
+          text-align: left;
+          margin-top: 0;
+          font-size: 14px;">The Global Finance</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 22rem; border-width: 0px;">
+        <a href=""> <img src="https://static.tbcconcept.ge/desktop/media/kxhrqpjz.vqveuromoney-institutional-investor-plc-logo-vector.png" height="80px"  style="padding-right: 100px;" class="card-img-top" alt="...">
+        </a><div class="card-body">
+          <h5 class="card-title" style="color: #141719;
+          margin-right: 40px;
+          font-size: 14px;
+          font-weight: 700;">საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024</h5>
+          <p class="card-text" style="color: #141719;
+          text-align: left;
+          margin-top: 0;
+          font-size: 14px;">Euromoney</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 22rem; padding-bottom: 0px;border-width: 0px; ">
+        <a href=""> <img src="https://static.tbcconcept.ge/desktop/media/hhsplnxm.sruglobal-finance-logo-8F6EBD1345-seeklogo.com.png" height="80px" width="30px" style="padding-right: 100px;" class="card-img-top" alt="...">
+        </a> <div class="card-body">
+          <h5 class="card-title" style="color: #141719;
+          margin-right: 40px;
+          font-size: 14px;
+          font-weight: 700;">საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024</h5>
+          <p class="card-text" style="color: #141719;
+          text-align: left;
+          margin-top: 0;
+          font-size: 14px;">The Global Finance</p>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  </div>
+
+  <footer  class="bg-light py-4">
+    <div class="container" style="background-color: rgba(var(--bs-light-rgb))">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+              
+                <h5>პროდუქტები</h5><br>
+                <ul class="list-unstyled">
+                    <li style="margin-right: 80px;"><a href="#" class="text-dark">ნაკრები</a></li><br>
+                    <li style="margin-left:40px"><a href="#" class="text-dark">პერსონალური ბანკირი</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3">
+                <h5 style="margin-right: 50px;">Lifestyle</h5><br>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">შეთავაზებები</a></li><br>
+                    <li><a href="#" class="text-dark">ღონისძიებები</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3">
+                <h5 style="margin-right: 50px;">კონტაქტის სერვისი</h5> <br>
+                <ul class="list-unstyled">
+                    <li style="margin-right: 130px;"><a href="#" class="text-dark">ბიბლიოთეკა</a></li><br>
+                    <li style="margin-right:190px"><a href="#" class="text-dark">კაფე</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3">
+                <h5>დაგვიკავშირდით:</h5>
+                <p style="color: black; margin-top: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg> +995 32 2 27 27 00</p>
+                <p style="margin-top: 20px;"><a href="mailto:info@tbcconcept.ge" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>  info@tbcconcept.ge</a></p>
+                <p style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg>ფილიალები</p>
+                <div class="mt-3">
+                  <p style="color: black; font-weight:bold;">სოციალური ქსელები</p>
+                    <a href="#" class="text-dark mr-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg></a>
+                    <a href="#" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<hr style="color: black;margin-left:-180px;margin-right: -10px;">
+<div style="display: flex;" id="lastcontainer">
+  <p style="color: #141719;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 100;" >2024 ყველაფერი დაცულია</p>
+  <p style="color:black; margin-left: 45%; font-size: 13px;
+  font-weight: 100;">კონფიდეციალურობა</p>
+  <P style="color: black;margin-left:50px;font-size: 13px;
+  font-weight: 100;" >წესები და პირობები</P>
+  </div>    
+  
+  <div class="fab-container">
+    <button class="fab" onclick="toggleMenu()">
+        <div class="fab-icon">⋮</div>
+    </button>
+    <div style="margin-bottom: 50px;" class="fab-options">
+        <button class="fab-option">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+          </svg>
+        </button>
+        <button class="fab-option">
+          <svg data-v-42e74cda="" width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M14.0007 25.6666C7.58398 25.6666 2.33398 20.4166 2.33398 13.9999C2.33398 7.58325 7.58398 2.33325 14.0007 2.33325C20.4173 2.33325 25.6673 7.58325 25.6673 13.9999C25.6673 15.8666 25.3173 17.6166 24.5007 19.1333C24.2673 19.7166 23.5673 19.9499 22.984 19.7166C22.4007 19.4833 22.1673 18.7833 22.4007 18.1999C23.1007 16.9166 23.334 15.5166 23.334 13.9999C23.334 8.86658 19.134 4.66659 14.0007 4.66659C8.86732 4.66659 4.66732 8.86658 4.66732 13.9999C4.66732 18.7833 8.28398 22.6333 12.834 23.2166V22.1666C12.834 21.4666 13.3007 20.9999 14.0007 20.9999C14.7007 20.9999 15.1673 21.4666 15.1673 22.1666V24.4999C15.1673 25.1999 14.7007 25.6666 14.0007 25.6666ZM9.33398 18.6666C8.98398 18.6666 8.63398 18.5499 8.40065 18.1999C7.46732 16.9166 7.00065 15.5166 7.00065 13.9999C7.00065 12.4833 7.46732 10.9666 8.40065 9.79992C8.75065 9.33325 9.56732 9.21658 10.034 9.56658C10.5007 9.91658 10.6173 10.7333 10.2673 11.1999C9.68398 12.0166 9.33398 12.9499 9.33398 13.9999C9.33398 15.0499 9.68398 15.9833 10.2673 16.7999C10.6173 17.2666 10.5007 18.0833 10.034 18.4333C9.80065 18.5499 9.56732 18.6666 9.33398 18.6666ZM18.6673 18.6666C18.434 18.6666 18.2007 18.5499 17.9673 18.4333C17.5007 18.0833 17.384 17.2666 17.734 16.7999C18.3173 15.9833 18.6673 15.0499 18.6673 13.9999C18.6673 12.9499 18.3173 12.0166 17.734 11.1999C17.384 10.7333 17.5007 9.91658 17.9673 9.56658C18.434 9.21658 19.2506 9.33325 19.6006 9.79992C20.534 10.9666 21.0007 12.4833 21.0007 13.9999C21.0007 15.5166 20.534 17.0333 19.6006 18.1999C19.3673 18.4333 19.0173 18.6666 18.6673 18.6666Z"></path></svg>
+        </button>
+        <button class="fab-option">
+          <svg data-v-42e74cda="" width="28" height="28" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path data-v-42e74cda="" d="M14 2.33334C9.49665 2.33334 5.83331 5.99668 5.83331 10.5C5.83331 17.115 11.9466 24.5117 12.2033 24.8267C12.6466 25.3633 13.3 25.6667 14 25.6667C14.6883 25.6667 15.3533 25.3517 15.7966 24.8267C16.0533 24.5117 22.1666 17.08 22.1666 10.5C22.1666 5.99668 18.5033 2.33334 14 2.33334ZM14 23.3333C14 23.3333 8.16665 16.345 8.16665 10.5C8.16665 7.28001 10.78 4.66668 14 4.66668C17.22 4.66668 19.8333 7.28001 19.8333 10.5C19.8333 16.31 14 23.3333 14 23.3333ZM14 7.00001C12.075 7.00001 10.5 8.57501 10.5 10.5C10.5 12.425 12.075 14 14 14C15.925 14 17.5 12.425 17.5 10.5C17.5 8.57501 15.925 7.00001 14 7.00001ZM14 11.6667C13.3583 11.6667 12.8333 11.1417 12.8333 10.5C12.8333 9.85834 13.3583 9.33334 14 9.33334C14.6416 9.33334 15.1666 9.85834 15.1666 10.5C15.1666 11.1417 14.6416 11.6667 14 11.6667Z"></path></svg>
+        </button>
+    </div>
+</div>
+<script src="script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+
+
+
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" > </script>
+</body>
+</html>
